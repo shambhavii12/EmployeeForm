@@ -42,7 +42,10 @@ This project is an Employee Management System that utilizes **JsonPowerDB (JPDB)
 - **v1.1.0** - Added validation and data retrieval functionality.
 - **v1.2.0** - Implemented update feature for existing records.
 
-## Sources
-- [JsonPowerDB Documentation](http://login2explore.com/jpdb/docs.html)
-- [Bootstrap](https://getbootstrap.com/)
-- [jQuery](https://jquery.com/)
+## Sources 
+- [JsonPowerDB Official Documentation](https://login2explore.com/jpdb/docs.html)
+- [Github Repository](https://github.com/shambhavii12/EmployeeForm)
+- [JsonPowerDB Youtube Tuitorials Reference](https://www.youtube.com/watch?v=Z5iSgVn_LFU&t=1s,https://www.youtube.com/watch?v=JvF2huZAgtI&t=1s)
+
+
+Developed by **Shambhavi Das**
