@@ -38,7 +38,9 @@ This project is an Employee Management System that utilizes **JsonPowerDB (JPDB)
 4. Use navigation buttons to browse records.
 
 ## Release History
-- **v1.0 (2025-04-02)**: Initial release with CRUD operations using JsonPowerDB.
+- **v1.0.0** (Initial Release) - Implemented basic form with JPDB integration.
+- **v1.1.0** - Added validation and data retrieval functionality.
+- **v1.2.0** - Implemented update feature for existing records.
 
 ## Sources
 - [JsonPowerDB Documentation](http://login2explore.com/jpdb/docs.html)
