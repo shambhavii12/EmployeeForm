@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Employee Website</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <!--  <link rel="stylesheet" href="style.css" type="text/css"/>-->
+
+
+        <!--jQuery library-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <!--Latest compiled JavaScript-->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+
+    </head>
+    <body>
+        <div class='container'>
+            <div class='page-header text-center'>
+                <h2>Employee Form using the JPDB API</h2>
+            </div>
+            <form id="empform" method="get">
+                <div class="form-group row">
+                    <label class="col-form-label col-sm-3 text-center my-auto"> Employee ID : </label>
+                    <div class="col-sm-9">
+                        <input type='text' id='empid' class="form-control" onchange="getEmp()">
+                    </div>
+                </div>
+                <div class='form-group row'>
+                    <label class="col-form-label col-sm-3 text-center my-auto"> Employee Name: </label>
+                    <div class="col-sm-9">
+                        <input type='text' id='empname' class='form-control'> 
+                    </div>
+                </div>
+
+                <div class='form-group row'>
+                    <label class="col-form-label col-sm-3 text-center my-auto"> Basic Salary: </label>
+                    <div class="col-sm-9">
+                        <input type='number' id='empsal' class='form-control'>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-form-label col-sm-3 text-center m-auto"> HRA : </label>
+                    <div class="col-sm-9">
+                        <input type='number' id='hra' class="form-control">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-form-label col-sm-3 text-center my-auto"> DA : </label>
+                    <div class="col-sm-9">  
+                        <input type="number" id='da' class="form-control">
+                    </div>
+                </div>
+                <div class='form-group row'>
+                    <label class="col-form-label col-sm-3 text-center my-auto"> Deduction : </label>
+                    <div class="col-sm-9">
+                        <input type='number' id='deduct' class='form-control'>
+                    </div>
+                </div>
+                <div class="form-group text-center">
+                    <nav class="navbar navbar-default text-center" style="border:none">
+                        <button type='button' class="btn btn-lg btn-primary" id='new' onclick="newForm()">New</button>
+                        <button type='button' class="btn btn-lg btn-primary" id='save' onclick="saveData()" disabled>Save</button>
+                        <button type='button' class="btn btn-lg btn-primary" id='edit' onclick="editData()" >Edit</button>
+                        <button type='button' class="btn btn-lg btn-primary" id='change' onclick="changeData()" disabled>Change</button>
+                        <button type='button' class="btn btn-lg btn-primary" id='reset' onclick="resetForm()" disabled>Reset</button>
+                    </nav>
+                    <nav class="navbar navbar-default text-center" style="border:none">
+                        <button type='button' class="btn btn-lg btn-primary" id='first' onclick="getFirst()">First</button>
+                        <button type='button' class="btn btn-lg btn-primary" id='previous' onclick="getPrevious()" >Previous</button>
+                        <button type='button' class="btn btn-lg btn-primary" id='next' onclick="getNext()" disabled>Next</button>
+                        <button type='button' class="btn btn-lg btn-primary" id='last' onclick="getLast()" >Last</button>
+                    </nav>
+                </div>
+            </form>
+        </div>
+
+        <script type="text/javascript" src='http://login2explore.com/jpdb/resources/js/0.0.3/jpdb-commons.js'></script>
+        <script type="text/javascript" src='js/index.js'></script>
+
+    </body>
+</html>
